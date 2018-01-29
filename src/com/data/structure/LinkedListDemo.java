@@ -2,7 +2,7 @@ package com.data.structure;
 
 
 /**
- * Created by VK84068 on 29-Jan-18.
+ * Created by Vijay Kumar on 29-Jan-18.
  */
 public class LinkedListDemo {
     public static void main(String[] args) {
