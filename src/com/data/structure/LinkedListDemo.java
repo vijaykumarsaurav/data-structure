@@ -19,10 +19,11 @@ public class LinkedListDemo {
         list.addFirst("before_start");
         list.addLast("last");
         list.addLast("lastonemore");
+        list.addPosition("midvalue",10);
+        list.addPosition("somevalue",5);
         list.show();
     }
 }
-
 
 class LinkedList{
     Node head,temp;
@@ -37,7 +38,30 @@ class LinkedList{
             temp.next = new Node(o);
         }
     }
-    public boolean addOnPosition(){
+    public boolean addPosition(Object o, int num){
+        if(num <= 0){
+            return false;
+        }else if(num == 1){
+            addFirst(o);
+        }else{
+            temp = head;
+            Node temp2;
+            int counter=1;
+            while (temp.next != null){
+                if(counter == num-1){
+                    temp2 = temp.next;
+                    temp.next = new Node(o);
+                    temp = temp.next;
+                    temp.next = temp2;
+                    return true;
+                }
+                temp = temp.next;
+                counter++;
+            }
+            if(num >= counter){
+                addLast(o);
+            }
+        }
         return false;
     }
     public boolean addFirst(Object o){
