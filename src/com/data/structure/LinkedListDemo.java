@@ -6,7 +6,7 @@ package com.data.structure;
  */
 public class LinkedListDemo {
     public static void main(String[] args) {
-      //  System.out.println("LinkedList");
+        System.out.println("LinkedList");
         LinkedList list = new LinkedList();
         list.add(10);
         list.add(20);
