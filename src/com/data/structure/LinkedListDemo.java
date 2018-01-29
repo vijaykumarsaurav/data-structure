@@ -10,13 +10,15 @@ public class LinkedListDemo {
         LinkedList list = new LinkedList();
         list.add(10);
         list.add(20);
-        list.add(30);
-        list.add(40);
-        list.add(50);
         list.add("one");
         list.add(true);
         list.add(60.30);
         list.add('V');
+        list.add('K');
+        list.addFirst("start");
+        list.addFirst("before_start");
+        list.addLast("last");
+        list.addLast("lastonemore");
         list.show();
     }
 }
@@ -34,6 +36,24 @@ class LinkedList{
             }
             temp.next = new Node(o);
         }
+    }
+    public boolean addOnPosition(){
+        return false;
+    }
+    public boolean addFirst(Object o){
+        Node newNode = new Node(o);
+        newNode.next = head;
+        head = newNode;
+        return true;
+    }
+    public boolean addLast(Object o){
+        Node newNode = new Node(o);
+        temp = head;
+        while (temp.next != null){
+            temp = temp.next;
+        }
+        temp.next = newNode;
+        return true;
     }
     public void show(){
         temp = head;
