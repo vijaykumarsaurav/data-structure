@@ -1,26 +1,21 @@
 package com.data.structure;
-
-
 /**
  * Created by Vijay Kumar on 29-Jan-18.
  */
 public class LinkedListDemo {
     public static void main(String[] args) {
-        System.out.println("LinkedList");
         LinkedList list = new LinkedList();
         list.add(10);
-        list.add(20);
         list.add("one");
         list.add(true);
         list.add(60.30);
-        list.add('V');
-        list.add('K');
+        list.add('@');
         list.addFirst("start");
-        list.addFirst("before_start");
         list.addLast("last");
-        list.addLast("lastonemore");
-        list.addPosition("midvalue",10);
-        list.addPosition("somevalue",5);
+        list.addPosition("midvalue",5);
+        list.removeFirst();
+        list.removeLast();
+        list.removePosition(4);
         list.show();
     }
 }
@@ -79,12 +74,49 @@ class LinkedList{
         temp.next = newNode;
         return true;
     }
+
+    public boolean removeFirst(){
+        head = head.next;
+        return true;
+    }
+    public boolean removeLast(){
+        temp = head;
+        while (temp.next.next != null){
+            temp = temp.next;
+        }
+        temp.next = null;
+        return true;
+    }
+
     public void show(){
         temp = head;
         while (temp != null) {
             System.out.print(temp.data + "\t");
             temp = temp.next;
         }
+    }
+    public boolean removePosition(int num){
+        if(num <= 0){
+            return false;
+        }else if(num == 1){
+            removeFirst();
+        }else{
+            temp = head;
+            Node temp2;
+            int counter=1;
+            while (temp.next != null){
+                if(counter == num-1){
+                    temp.next = temp.next.next;
+                    return true;
+                }
+                temp = temp.next;
+                counter++;
+            }
+            if(num == counter){
+                removeLast();
+            }
+        }
+        return false;
     }
 
 }

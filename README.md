@@ -1,32 +1,32 @@
     # data-struecture
      Data Structrue - LinkList operations :
       => Add one by one.
-      => addFirst is for add as first element.
-      => addLast is for add as last element.
-      => addPosition add in given position.
+      => addFirst() insert a element at first position.
+      => addLast() insert a element  at last position.
+      => addPosition() insert a element at given position.
+      => removeFirst() remove a element at first position.
+      => removeLast() remove a element at last position.
+      => removePosition() remove a element at given position
       => show all the element of link list.
 
      public static void main(String[] args) {
-        System.out.println("LinkedList");
-        LinkedList list = new LinkedList();
-        list.add(10);
-        list.add(20);
-        list.add("one");
-        list.add(true);
-        list.add(60.30);
-        list.add('V');
-        list.add('K');
-        list.addFirst("start");
-        list.addFirst("before_start");
-        list.addLast("last");
-        list.addLast("lastonemore");
-        list.addPosition("midvalue",10);
-        list.addPosition("somevalue",5);
-        list.show();
+              LinkedList list = new LinkedList();
+              list.add(10);
+              list.add("one");
+              list.add(true);
+              list.add(60.30);
+              list.add('@');
+              list.addFirst("start");
+              list.addLast("last");
+              list.addPosition("midvalue",5);
+              list.removeFirst();
+              list.removeLast();
+              list.removePosition(4);
+              list.show();
     }
 
-    Output :
-    LinkedList
-    before_start	start	10	20	somevalue	one	true	60.3	V	K	midvalue	last	lastonemore
+   <b>Output : </b>
 
-    Code : https://github.com/vijaykumarsaurav/data-structure/blob/master/src/com/data/structure/LinkedListDemo.java
+   10	one	true	60.3	@
+
+   Code : https://github.com/vijaykumarsaurav/data-structure/blob/master/src/com/data/structure/LinkedListDemo.java
