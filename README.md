@@ -16,20 +16,20 @@
         list.add(true);
         list.add(60.30);
         list.add('@');
-		list.add("six");
+	list.add("six");
         list.addFirst("start");
         list.addLast("last");
         list.addPosition("midvalue",5);
         list.removeFirst();
         list.removeLast();
         list.removePosition(4);
-		list.show();
-		list.showMid();
+	list.show();
+	list.showMid();
     }
 
    <b>Output : </b>
 
-   10      one     true    60.3    @       six
+   10      one     true    60.3    @       six <br>
    Mid data : true
 
    Code : https://github.com/vijaykumarsaurav/data-structure/blob/master/src/com/data/structure/LinkedListDemo.java
