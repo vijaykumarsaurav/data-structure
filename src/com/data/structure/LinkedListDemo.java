@@ -1,4 +1,3 @@
-package com.data.structure;
 /**
  * Created by Vijay Kumar Saurav on 29-Jan-18.
  */
@@ -10,18 +9,21 @@ public class LinkedListDemo {
         list.add(true);
         list.add(60.30);
         list.add('@');
+		list.add("six");
         list.addFirst("start");
         list.addLast("last");
         list.addPosition("midvalue",5);
         list.removeFirst();
         list.removeLast();
         list.removePosition(4);
-        list.show();
+		list.show();
+		list.showMid();
+       
     }
 }
 
 class LinkedList{
-    Node head,temp;
+    Node head=null,temp=null;
     public void add(Object o){
         if(head ==  null){
             head = new Node(o);
@@ -95,6 +97,16 @@ class LinkedList{
             temp = temp.next;
         }
     }
+	public void showMid(){
+		Node rabbit, torr;
+		rabbit = torr = head;
+		while(rabbit.next != null && rabbit.next.next != null){
+			rabbit = rabbit.next.next;
+			torr = torr.next;
+		}
+		System.out.print("\nMid data : " + torr.data + "\t");
+        
+	}
     public boolean removePosition(int num){
         if(num <= 0){
             return false;
