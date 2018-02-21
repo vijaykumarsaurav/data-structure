@@ -1,7 +1,8 @@
 <h1>Data Structrue - LinkList operations</h1>
 <h2>Singly Linked List</h2>
 <p>=&gt; Add one by one. =&gt; addFirst() insert a element at first position. <br /> =&gt; addLast() insert a element at last position. <br /> =&gt; addPosition() insert a element at given position. <br /> =&gt; removeFirst() remove a element at first position. <br /> =&gt; removeLast() remove a element at last position. <br /> =&gt; removePosition() remove a element at given position. <br /> =&gt; show all the element of link list. <br /> </p>
-<pre>     public static void main(String[] args) {
+<pre>   
+	public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.add(10);
         list.add("one");
@@ -47,7 +48,7 @@
 		list.showBackward();
 		System.out.println("\nEnd");
 	}
-	</pre>
+</pre>	
 <p><br /> <strong>Output : </strong> </p>
 <pre>	
 	Start
@@ -57,12 +58,13 @@
 	@	60.3	true	Mid	one	10	
 	End
 
-	</pre>
+</pre>
 <p><br /> Code :https://github.com/vijaykumarsaurav/data-structure/blob/master/src/com/data/structure/DoblelyLinkedListDemo.java </p>
 <hr />
 <h2>Circular Linked List</h2>
 <p>&nbsp;</p>
-<pre>	public static void main(String[] args) {
+<pre>	
+	public static void main(String[] args) {
         System.out.println("Start");
         CircularLinkedList list = new CircularLinkedList();
         list.add(10);
@@ -79,7 +81,7 @@
         list.show();
         System.out.println("\nEnd");
     }
-	</pre>
+</pre>
 <p><br /> <strong>Output : </strong> </p>
 <pre>	Start 
 	Most_First	First	10	one	byPosition	true	60.3	@	Last	Most_Last	  
