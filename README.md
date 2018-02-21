@@ -2,7 +2,8 @@
 <h2>Singly Linked List</h2>
 <p>
 <ol>
-<li>&nbsp;Add one by one. =&gt; addFirst() insert a element at first position.</li>
+<li>&nbsp;add() Add one by one. </li>	
+<li>&nbsp;addFirst() insert a element at first position.</li>
 <li>&nbsp;addLast() insert a element at last position.</li>
 <li>addPosition() insert a element at given position.</li>
 <li>removeFirst() remove a element at first position.</li>
