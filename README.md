@@ -8,15 +8,15 @@
         list.add(true);
         list.add(60.30);
         list.add('@');
-		list.add("six");
+	list.add("six");
         list.addFirst("start");
         list.addLast("last");
         list.addPosition("midvalue",5);
         list.removeFirst();
         list.removeLast();
         list.removePosition(4);
-		list.show();
-		list.showMid();
+	list.show();
+	list.showMid();
     }
 	</pre>
 <p><br /> <strong>Output : </strong> </p>
