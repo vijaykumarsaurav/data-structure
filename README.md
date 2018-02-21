@@ -1,6 +1,16 @@
 <h1>Data Structrue - LinkList operations</h1>
 <h2>Singly Linked List</h2>
-<p>=&gt; Add one by one. =&gt; addFirst() insert a element at first position. <br /> =&gt; addLast() insert a element at last position. <br /> =&gt; addPosition() insert a element at given position. <br /> =&gt; removeFirst() remove a element at first position. <br /> =&gt; removeLast() remove a element at last position. <br /> =&gt; removePosition() remove a element at given position. <br /> =&gt; show all the element of link list. <br /> </p>
+<p>
+<ol>
+<li>&nbsp;Add one by one. =&gt; addFirst() insert a element at first position.</li>
+<li>&nbsp;addLast() insert a element at last position.</li>
+<li>addPosition() insert a element at given position.</li>
+<li>removeFirst() remove a element at first position.</li>
+<li>removeLast() remove a element at last position.</li>
+<li>removePosition() remove a element at given position.</li>
+<li>show all the element of link list. </li>
+</ol>
+<br /> </p>
 <pre>   
 	public static void main(String[] args) {
         LinkedList list = new LinkedList();
