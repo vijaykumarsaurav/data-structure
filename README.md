@@ -27,8 +27,10 @@
 <hr />
 <h2>Doubly Linked List</h2>
 <p>&nbsp;</p>
-<pre>	public static void main(String[] args) {
+<pre>	
+	public static void main(String[] args) {
 		DoubleLinkedList list = new DoubleLinkedList();
+		System.out.println("\nStart");
 		list.add(10);
 		list.add("one");
 		list.add(true);
@@ -38,27 +40,23 @@
 		//list.addFirst("FirstMost");
 		//list.addLast("Last");
 		//list.addLast("LastMost");
-		System.out.println("Forward Direction&gt;&gt;&gt;");
-		list.showForward();
-		System.out.println("Forward Direction&gt;&gt;&gt; before adding position ");
 		list.addPosition(3, "Mid");
-		System.out.println(" after adding");
-		System.out.println("Forward Direction&gt;&gt;&gt;");
+		System.out.println("Forward Direction>>>");
 		list.showForward();
-		System.out.println("\nBackward Direction&lt;&lt;&lt;");
+		System.out.println("\nBackward Direction<<<");
 		list.showBackward();
-		System.out.println("\nEndend");
+		System.out.println("\nEnd");
 	}
 	</pre>
 <p><br /> <strong>Output : </strong> </p>
-<pre>	Forward Direction&gt;&gt;&gt; 
-	10	one	true	60.3	@	Forward Direction&gt;&gt;&gt; before adding position  
-	 after adding 
-	Forward Direction&gt;&gt;&gt; 
+<pre>	
+	Start
+	Forward Direction>>>
 	10	one	Mid	true	60.3	@	
-	Backward Direction&lt;&lt;&lt; <br />
-	@	60.3	true	Mid	one	10	 
-	Endend
+	Backward Direction<<<
+	@	60.3	true	Mid	one	10	
+	End
+
 	</pre>
 <p><br /> Code :https://github.com/vijaykumarsaurav/data-structure/blob/master/src/com/data/structure/DoblelyLinkedListDemo.java </p>
 <hr />
